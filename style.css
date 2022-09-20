@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color: #6290c3;
+}
+img {
+  display: block;
+  max-width: 100vh;
+}
+
+#carrossel {
+  width: 35%;
+  height: 50vh;
+  position: relative;
+  margin: 0 auto;
+}
+#carrossel img {
+  position: absolute;
+  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  margin:  50px 0 0 130px;
+  transition: opacity 800ms;
+  box-shadow: 8px 5px 26px -3px rgba(0,0,0,0.51);
+}
+
+#carrossel img.img-active {
+  opacity: 1;}
